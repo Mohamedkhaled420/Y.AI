@@ -21,8 +21,8 @@ const ChatBot = ({ onBack }) => {
   const [retryCount, setRetryCount] = useState(0)
   const messagesEndRef = useRef(null)
 
-  // API endpoint - will be updated to use Cloudflare Worker
-  const API_ENDPOINT = 'https://y-ai.m-hassouna-mk.workers.dev/api/gemini'
+  // API endpoint - will be updated to use DigitalOcean backend
+  const API_ENDPOINT = '/api/gemini'
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" })
